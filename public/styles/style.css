@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Roboto&family=Salsa&display=swap');
+
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #e1e1e1;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    margin-top: 2rem;
+}
+
+header > .date {
+    font-family: "Salsa";
+    margin: 0 auto;
+    min-width: 260px;
+    width: 500px;
+    padding: 1.5rem;
+    background-color: #3d3d3d60;
+    border: 2px solid #b64f4f80;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.todo-list {
+    min-width: 260px;
+    width: 500px;
+    margin: 3rem auto;
+    padding: 1rem 1.5rem;
+    background-color: #e1e1e140;
+    border: 2px solid #e1e1e1aa;
+    border-radius: 1rem;
+}
+
+.form-input > input[type=text] {
+    border: none;
+    padding: 0.75rem;
+    padding-left: 0;
+    min-width: fit-content;
+    width: 450px;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-family: "Dekko";
+    color: #e1e1e1;
+}
+
+.form-input > input[type=text]:focus {
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: #e1e1e1;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+ul > li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e1e1e180;
+    font-size: 1.25rem;
+}
+
+.label {
+    font-family: "Dekko";
+}
+
+.form-input {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strikeout {
+    text-decoration: line-through;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #e1e1e1;
+    padding: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(14, 176, 191);
+}
+
+footer > p {
+    font-family: "Roboto";
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    header > .date {
+        text-align: center;
+        max-width: 260px;
+    }
+
+    .todo-list {
+        max-width: 260px;
+    }
+
+    form > input[type=text] {
+        width: 8rem;
+    }
+}

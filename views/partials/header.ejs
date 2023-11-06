@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <% const now = new Date(); %>
+    <% const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; %>
+    <% const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; %>
+    <% const today = `${dayOfWeek[now.getDay()]} | ${month[now.getMonth()]} ${now.getDate()}`; %>
+    <header>
+        <div class="date">
+            <h1><%= today %></h1>
+        </div>
+    </header>
